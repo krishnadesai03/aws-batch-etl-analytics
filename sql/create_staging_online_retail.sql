@@ -113,5 +113,8 @@ HAVING COUNT(*) > 1;
 SELECT MIN(quantity), MAX(quantity), MIN(unit_price), MAX(unit_price)
 FROM staging.online_retail_cleaned;
 
-SELECT COUNT(*) FROM staging.online_retail_cleaned
-WHERE is_free_item = 1;
+CREATE INDEX idx_stg_invoice_date ON staging.online_retail_cleaned (invoice_date);
+CREATE INDEX idx_stg_customer ON staging.online_retail_cleaned (customer_id);
+
+
+
