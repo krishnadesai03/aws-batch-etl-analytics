@@ -22,7 +22,7 @@ The objective of this project is to:
 ## 🏗️ Architecture
 The pipeline follows a standard **batch data processing architecture**:
 
-![alt text](image.png)
+
 
 
 ### Key Components:
